@@ -1,4 +1,9 @@
+# this config is for Microsoft Surface Pro
 # log in as root
+
+# ensure that the appropriate kernel module is loaded
+modprobe -rf mwifiex_pcie
+modprobe -if mwifiex_pcie
 
 # determine the wireless interface name
 ifconfig -a
