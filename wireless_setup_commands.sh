@@ -1,6 +1,9 @@
 # this config is for Microsoft Surface Pro
 # log in as root
 
+# query the kernel for loaded modules and drivers
+lspci -k
+
 # ensure that the appropriate kernel module is loaded
 modprobe -rf mwifiex_pcie
 modprobe -if mwifiex_pcie
